@@ -8,3 +8,9 @@ I'll probably host the bot and make it public for top.gg so anyone can use it, a
 
 **Invite**
 https://discord.com/api/oauth2/authorize?client_id=786697105838309426&permissions=268438656&scope=bot
+
+**Selfhost**
+change the 'token' string at the end of the code to yours
+and the guildId to yours.
+Than install dependencies: `python3 -m pip install discord.py` and `python3 -m pip install durations`
+and than finally run `python3 bot/main.py`
