@@ -34,7 +34,7 @@ async def on_message(message):
 async def on_ready():
     global RJD, RolesJson
     await bot.change_presence(activity=discord.Game(name=f"{command_prefix}help"))
-    TestingZone = bot.get_guild(681478549240283171)
+    TestingZone = bot.get_guild(Your GuildID Goes here!!!!!!)
     try:
         RolesJson = open("roles.json", "r+")
     except:
