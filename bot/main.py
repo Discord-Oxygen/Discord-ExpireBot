@@ -39,7 +39,7 @@ async def on_ready():
         RolesJson = open("roles.json", "r+")
     except:
         RolesJson = open("roles.json", "w+")
-        json.dump({"roles": []}, RolesJson)
+        json.dump({{"perms": [], "roles": []}, RolesJson)
         RolesJson.seek(0)
     # Setup
     RJD = json.load(RolesJson)
