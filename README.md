@@ -11,6 +11,7 @@ I'll probably host the bot and make it public for top.gg so anyone can use it, a
 https://discord.com/api/oauth2/authorize?client_id=786697105838309426&permissions=268438656&scope=bot
 
 ## Selfhost
+(I'd recommend to use a Raspberry Pi)
 change the 'token' string at the end of the code to yours
 and the guildId to yours.
 Than install dependencies: `python3 -m pip install discord.py` and `python3 -m pip install durations`
@@ -31,13 +32,17 @@ and than finally run `python3 bot/main.py`
  ### How to fork the repository and set it up to work with Heroku?
  * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
  * Make the forked repo private
+ * Replace the GuildID with yours
  * Replace the `token` string at the end of the file bot/main.py with your token
  * Create an application for Heroku by clicking [here](https://dashboard.heroku.com/new-app).
  * Under 'Deploy', do the following:
    * Deployment Method => Connect your GitHub
    * App connected to GitHub => Search for the forked repository
    * Automatic Deploy => Enable Automatic Deploy (to redeploy after every commit)
+   * It should look like something like this:
+    ![image](https://user-images.githubusercontent.com/55095883/103678558-f387b780-4f83-11eb-8e83-7b02c9841031.png)
  * Under 'Resources', do the following:
+ ![image](https://user-images.githubusercontent.com/13210233/103232638-fb52b680-4908-11eb-861d-767e59522b93.png)
    * Click on the 'Pencil' icon.
    * Switch the worker from off to on.
    * Click 'Confirm' to finalize the decision.
