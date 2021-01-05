@@ -2,32 +2,33 @@
 
 This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h, the role will get removed automatically 12h after obtaining. This is individual to all users on the guild. It also saves the obtaining time into a JSON File, so if the Bot gets temporary offline, it can handle this.
 
-### Credit
+## Credit
 I didn't code it all on myself, I only helped and send feedback/did testing etc. The original Creator wants to stay private, so we decided to make the bot my own.
 I'll probably host the bot and make it public for top.gg so anyone can use it, and I'll add multi-guild functuallity. The more complicated features will be coded by my friend (my Python knowledge is very limited)
 
-### Invite
+## Invite
 (currently only works on one server so its disabled)
 https://discord.com/api/oauth2/authorize?client_id=786697105838309426&permissions=268438656&scope=bot
 
-### Selfhost
+## Selfhost
 change the 'token' string at the end of the code to yours
 and the guildId to yours.
 Than install dependencies: `python3 -m pip install discord.py` and `python3 -m pip install durations`
 and than finally run `python3 bot/main.py`
 
-### Host using Heroku
+## Host using Heroku
 <details>
   <summary>Check out the original tutorial from https://github.com/audieni/discord-py-heroku/</summary>
- ##### Prerequisites
+  
+ ### Prerequisites
  You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)], GitHub [[Link](https://github.com/join)] , and Heroku [[Link (https://signup.heroku.com/)].
 
- ##### Creating a bot to get a bot token
+ ### Creating a bot to get a bot token
  * Create an application in the developer portal by clicking [here](https://discordapp.com/developers/applications/)
  * Open up your new application and click 'Add Bot' under the Bot settings to create your bot.
  * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!!
 
- ##### How to fork the repository and set it up to work with Heroku?
+ ### How to fork the repository and set it up to work with Heroku?
  * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
  * Make the forked repo private
  * Replace the `token` string at the end of the file bot/main.py with your token
