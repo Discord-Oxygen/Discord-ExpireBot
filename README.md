@@ -16,9 +16,9 @@ and the guildId to yours.
 Than install dependencies: `python3 -m pip install discord.py` and `python3 -m pip install durations`
 and than finally run `python3 bot/main.py`
 
+### Host using Heroku
 <details>
-  <summary>### Host using Heroku###</summary>
- Check out the original tutorial from https://github.com/audieni/discord-py-heroku/
+  <summary>Check out the original tutorial from https://github.com/audieni/discord-py-heroku/</summary>
  ##### Prerequisites
  You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)], GitHub [[Link](https://github.com/join)] , and Heroku [[Link (https://signup.heroku.com/)].
 
@@ -29,6 +29,8 @@ and than finally run `python3 bot/main.py`
 
  ##### How to fork the repository and set it up to work with Heroku?
  * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
+ * Make the forked repo private
+ * Replace the `token` string at the end of the file bot/main.py with your token
  * Create an application for Heroku by clicking [here](https://dashboard.heroku.com/new-app).
  * Under 'Deploy', do the following:
    * Deployment Method => Connect your GitHub
