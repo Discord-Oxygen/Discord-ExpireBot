@@ -18,8 +18,9 @@ Than install dependencies: `python3 -m pip install discord.py` and `python3 -m p
 and than finally run `python3 bot/main.py`
 
 ## Host using Heroku
+Check out the original tutorial from https://github.com/audieni/discord-py-heroku/
 <details>
-  <summary>Check out the original tutorial from https://github.com/audieni/discord-py-heroku/</summary>
+  <summary><b>Step-by-Step Tutorial</b></summary>
   
  ### Prerequisites
  You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)], GitHub [[Link](https://github.com/join)] , and Heroku [[Link (https://signup.heroku.com/)].
