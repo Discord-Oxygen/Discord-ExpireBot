@@ -32,9 +32,15 @@ and than finally run `python3 bot/main.py`
  ### How to fork the repository and set it up to work with Heroku?
  * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
  * Make the forked repo private
- * Replace the GuildID with yours
- * Replace the `token` string at the end of the file bot/main.py with your token
  * Create an application for Heroku by clicking [here](https://dashboard.heroku.com/new-app).
+ * Under 'Settings', click on 'Reveal Config Vars' and enter the following:
+   * KEY => discord_token
+   * VALUE => (Enter the bot token that you copied from the developer portal)
+   * Click the 'Add' button after entering all of this information.
+ same for the GuildID:
+   * KEY => guild_id
+   * VALUE => (Enter the ID of your Server. Rightclick on your Server on Discord and then click on `Copy ID`)
+   * Again, click the 'Add' button after entering all of this information.
  * Under 'Deploy', do the following:
    * Deployment Method => Connect your GitHub
    * App connected to GitHub => Search for the forked repository
