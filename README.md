@@ -32,17 +32,24 @@ and than finally run `python3 bot/main.py`
  ### How to fork the repository and set it up to work with Heroku?
  * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
  * Make the forked repo private
- * Replace the GuildID with yours
- * Replace the `token` string at the end of the file bot/main.py with your token
  * Create an application for Heroku by clicking [here](https://dashboard.heroku.com/new-app).
+ * Under 'Settings', click on 'Reveal Config Vars' and enter the following:
+   * KEY => discord_token
+   * VALUE => (Enter the bot token that you copied from the developer portal)
+   * Click the 'Add' button after entering all of this information.
+ same for the GuildID:
+   * KEY => guild_id
+   * VALUE => (Enter the ID of your Server. Rightclick on your Server on Discord and then click on `Copy ID`)
+   * Again, click the 'Add' button after entering all of this information.
+ ![config vars](https://user-images.githubusercontent.com/55095883/103836278-e99bac80-5088-11eb-8283-b3744b3f587d.png)
  * Under 'Deploy', do the following:
    * Deployment Method => Connect your GitHub
    * App connected to GitHub => Search for the forked repository
    * Automatic Deploy => Enable Automatic Deploy (to redeploy after every commit)
    * It should look like something like this:
-    ![image](https://user-images.githubusercontent.com/55095883/103678558-f387b780-4f83-11eb-8e83-7b02c9841031.png)
+    ![deploy](https://user-images.githubusercontent.com/55095883/103678558-f387b780-4f83-11eb-8e83-7b02c9841031.png)
  * Under 'Resources', do the following:
- ![image](https://user-images.githubusercontent.com/13210233/103232638-fb52b680-4908-11eb-861d-767e59522b93.png)
+ ![worker](https://user-images.githubusercontent.com/13210233/103232638-fb52b680-4908-11eb-861d-767e59522b93.png)
    * Click on the 'Pencil' icon.
    * Switch the worker from off to on.
    * Click 'Confirm' to finalize the decision.
