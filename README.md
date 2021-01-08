@@ -34,20 +34,14 @@ Check out the original tutorial from https://github.com/audieni/discord-py-herok
  ### Creating a bot to get a bot token
  * Create an application in the developer portal by clicking [here](https://discordapp.com/developers/applications/)
  * Open up your new application and click 'Add Bot' under the Bot settings to create your bot.
- * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!!
+ * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!! ![token example](https://user-images.githubusercontent.com/55095883/104066667-14f5d700-5202-11eb-82e0-6e44e4e1759a.png)
 
- ### How to fork the repository and set it up to work with Heroku?
- * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
+ ### How to clone the repository
+ * Clone this repository to your own (do **not** fork!!)
+ * Make your Repo private
+ * Replace 681478549240283171 in the source code with your guild id
+ * Replace the 'token' string at the end with the bot token you copied before e.g. `NzgxODc4MzQ1NzQ1ODI1ODlz.X8EC9A.-FI1PEnksgFsrid-m1O8c-eUTdc`
  * Create an application for Heroku by clicking [here](https://dashboard.heroku.com/new-app).
- * Under 'Settings', click on 'Reveal Config Vars' and enter the following:
-   * KEY => discord_token
-   * VALUE => (Enter the bot token that you copied from the developer portal)
-   * Click the 'Add' button after entering all of this information.
- same for the GuildID:
-   * KEY => guild_id
-   * VALUE => (Enter the ID of your Server. Rightclick on your Server on Discord and then click on `Copy ID`)
-   * Again, click the 'Add' button after entering all of this information.
- ![config vars](https://user-images.githubusercontent.com/55095883/103836278-e99bac80-5088-11eb-8283-b3744b3f587d.png)
  * Under 'Deploy', do the following:
    * Deployment Method => Connect your GitHub
    * App connected to GitHub => Search for the forked repository
