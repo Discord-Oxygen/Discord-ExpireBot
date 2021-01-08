@@ -38,7 +38,6 @@ Check out the original tutorial from https://github.com/audieni/discord-py-herok
 
  ### How to fork the repository and set it up to work with Heroku?
  * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
- * Make the forked repo private
  * Create an application for Heroku by clicking [here](https://dashboard.heroku.com/new-app).
  * Under 'Settings', click on 'Reveal Config Vars' and enter the following:
    * KEY => discord_token
