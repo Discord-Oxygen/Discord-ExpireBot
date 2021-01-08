@@ -29,7 +29,7 @@ Check out the original tutorial from https://github.com/audieni/discord-py-herok
   <summary><b>Step-by-Step Tutorial</b></summary>
   
  ### Prerequisites
- You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)], GitHub [[Link](https://github.com/join)] , and Heroku [[Link (https://signup.heroku.com/)].
+ You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)], GitHub [[Link](https://github.com/join)] , and Heroku [[Link](https://signup.heroku.com/)].
 
  ### Creating a bot to get a bot token
  * Create an application in the developer portal by clicking [here](https://discordapp.com/developers/applications/)
