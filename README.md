@@ -10,16 +10,23 @@ I'll probably host the bot and make it public for top.gg so anyone can use it, a
 (currently only works on one server so its disabled)
 https://discord.com/api/oauth2/authorize?client_id=786697105838309426&permissions=268438656&scope=bot
 
+## Contributing
+Consider giving this Repo a star if you like it and vote for the Bot at top.gg!!!
+Write issues and pulls! Test and Report! This helps the project.
+Also I don't mind donations ;)
+I need a (fake) Credit Card to confirm my Identity to reduce the hosting fees. It doesn't need to have money on it. If you have one or know where I can find one pls Contact me!!
+
 ## Selfhost
 (I'd recommend to use a Raspberry Pi)
-change the 'token' string at the end of the code to yours
-and the guildId to yours.
+Set the environment Variables `discord_token` and `guild_id` or
+change the token string at the end of the code and the guildId to yours.
 Than install dependencies: `python3 -m pip install discord.py` and `python3 -m pip install durations`
 and than finally run `python3 bot/main.py`
 
 ## Host using Heroku
+Check out the original tutorial from https://github.com/audieni/discord-py-heroku/
 <details>
-  <summary>Check out the original tutorial from https://github.com/audieni/discord-py-heroku/</summary>
+  <summary><b>Step-by-Step Tutorial</b></summary>
   
  ### Prerequisites
  You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)], GitHub [[Link](https://github.com/join)] , and Heroku [[Link (https://signup.heroku.com/)].
@@ -31,7 +38,6 @@ and than finally run `python3 bot/main.py`
 
  ### How to fork the repository and set it up to work with Heroku?
  * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
- * Make the forked repo private
  * Create an application for Heroku by clicking [here](https://dashboard.heroku.com/new-app).
  * Under 'Settings', click on 'Reveal Config Vars' and enter the following:
    * KEY => discord_token
@@ -47,7 +53,7 @@ and than finally run `python3 bot/main.py`
    * App connected to GitHub => Search for the forked repository
    * Automatic Deploy => Enable Automatic Deploy (to redeploy after every commit)
    * It should look like something like this:
-    ![deploy](https://user-images.githubusercontent.com/55095883/103678558-f387b780-4f83-11eb-8e83-7b02c9841031.png)
+    ![deploy](https://user-images.githubusercontent.com/55095883/104065542-35bd2d00-5200-11eb-98e3-978ceb2af120.png)
  * Under 'Resources', do the following:
  ![worker](https://user-images.githubusercontent.com/13210233/103232638-fb52b680-4908-11eb-861d-767e59522b93.png)
    * Click on the 'Pencil' icon.
