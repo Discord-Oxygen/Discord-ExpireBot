@@ -42,6 +42,8 @@ Check out the original tutorial from https://github.com/audieni/discord-py-herok
  * Make your Repo private
  * Replace 681478549240283171 in the source code with your guild id
  * Replace the 'token' string at the end with the bot token you copied before e.g. `NzgxODc4MzQ1NzQ1ODI1ODlz.X8EC9A.-FI1PEnksgFsrid-m1O8c-eUTdc`
+
+### How to setup heroku
  * Create an application for Heroku by clicking [here](https://dashboard.heroku.com/new-app).
  * Under 'Deploy', do the following:
    * Deployment Method => Connect your GitHub
