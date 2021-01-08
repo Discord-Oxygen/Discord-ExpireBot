@@ -4,7 +4,6 @@ import json
 from durations import Duration
 import time
 from discord.ext.commands import *
-import os
 command_prefix = "%"
 bot = Bot(command_prefix=command_prefix, intents=discord.Intents.all(), help_command=None)
 bot_name = "Expire Bot"
@@ -35,7 +34,7 @@ async def on_message(message):
 async def on_ready():
     global RJD, RolesJson
     await bot.change_presence(activity=discord.Game(name=f"{command_prefix}help"))
-    TestingZone = bot.get_guild(os.environ.get('guild_id'))
+    TestingZone = bot.get_guild(681478549240283171)
     try:
         RolesJson = open("roles.json", "r+")
     except:
@@ -225,4 +224,4 @@ async def delperm(ctx: Context, role: discord.Role):
 async def on_command_error(ctx: Context, err):
     await ctx.send(err)
 
-bot.run(os.environ.get('discord_token'))
+bot.run('token')
