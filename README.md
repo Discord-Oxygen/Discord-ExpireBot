@@ -53,7 +53,7 @@ Check out the original tutorial from https://github.com/audieni/discord-py-herok
    * App connected to GitHub => Search for the forked repository
    * Automatic Deploy => Enable Automatic Deploy (to redeploy after every commit)
    * It should look like something like this:
-    ![deploy](https://user-images.githubusercontent.com/55095883/103678558-f387b780-4f83-11eb-8e83-7b02c9841031.png)
+    ![deploy](https://user-images.githubusercontent.com/55095883/104065542-35bd2d00-5200-11eb-98e3-978ceb2af120.png)
  * Under 'Resources', do the following:
  ![worker](https://user-images.githubusercontent.com/13210233/103232638-fb52b680-4908-11eb-861d-767e59522b93.png)
    * Click on the 'Pencil' icon.
