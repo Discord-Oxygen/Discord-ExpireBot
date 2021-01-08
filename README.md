@@ -34,7 +34,8 @@ Check out the original tutorial from https://github.com/audieni/discord-py-herok
  ### Creating a bot to get a bot token
  * Create an application in the developer portal by clicking [here](https://discordapp.com/developers/applications/)
  * Open up your new application and click 'Add Bot' under the Bot settings to create your bot.
- * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!! ![token example](https://user-images.githubusercontent.com/55095883/104066667-14f5d700-5202-11eb-82e0-6e44e4e1759a.png)
+ * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!!<br>
+ ![token example](https://user-images.githubusercontent.com/55095883/104066667-14f5d700-5202-11eb-82e0-6e44e4e1759a.png)
 
  ### How to clone the repository
  * Clone this repository to your own (do **not** fork!!)
