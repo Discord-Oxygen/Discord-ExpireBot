@@ -1,6 +1,6 @@
 import discord
 from discord.ext import tasks
-import psycopg2
+import json
 from durations import Duration
 import time
 from discord.ext.commands import *
@@ -8,26 +8,6 @@ import os
 command_prefix = "%"
 bot = Bot(command_prefix=command_prefix, intents=discord.Intents.all(), help_command=None)
 bot_name = "Expire Bot"
-
-DATABASE_URL = os.environ['DATABASE_URL']
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-
-"""
-def create_connection(db_name, db_user, db_password, db_host, db_port):
-    connection = None
-    try:
-        connection = psycopg2.connect(
-            database=os.environ.get('db_name'),
-            user=os.environ.get('db_user'),
-            password=os.environ.get('db_password'),
-            host=os.environ.get('db_host'),
-            port=os.environ.get('db_port'),
-        )
-        print("Connection to PostgreSQL DB successful")
-    except OperationalError as e:
-        print(f"The error '{e}' occurred")
-    return connection
-"""
 
 def jsondump(v: dict):
     RolesJson.seek(0)
