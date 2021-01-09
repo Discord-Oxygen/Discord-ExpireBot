@@ -1,6 +1,7 @@
 import discord
 from discord.ext import tasks
 import json
+import psycopg2
 from durations import Duration
 import time
 from discord.ext.commands import *
@@ -8,6 +9,9 @@ import os
 command_prefix = "%"
 bot = Bot(command_prefix=command_prefix, intents=discord.Intents.all(), help_command=None)
 bot_name = "Expire Bot"
+
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 
 def jsondump(v: dict):
