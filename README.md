@@ -1,3 +1,6 @@
+# Dev Branch
+**DO NOT USE THIS BRANCH** its only for testing things out. It doesn't work, I just put some Code snippets and drafts here so I don't forget them. This isn't a working source code
+
 # Discord-ExpireBot
 
 This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h, the role will get removed automatically 12h after obtaining. This is individual to all users on the guild. It also saves the obtaining time into a JSON File, so if the Bot gets temporary offline, it can handle this.
