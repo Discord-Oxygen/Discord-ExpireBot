@@ -1,5 +1,5 @@
 # Dev Branch
-**DO NOT USE THIS BRANCH** its only for testing things out. It doesn't work, I just put some Code snippets and drafts here so I don't forget them. This isn't a working source code
+**DO NOT USE THIS BRANCH** its only for testing things out. It doesn't work, I just put some Code snippets and drafts here so I don't forget them. This isn't a working source code. It could harm your Server!!!
 
 # Discord-ExpireBot
 
