@@ -225,7 +225,7 @@ async def delperm(ctx: Context, role: discord.Role):
     else:
         await ctx.send("I don't think that role had permissions :confused:")
         
-@bot.command(name="help")
+@bot.command(name="ping")
 async def ping(ctx: Context):
     await ctx.send("pong")
 
