@@ -23,14 +23,33 @@ Also I don't mind donations ;)
 I need a (fake) Credit Card to confirm my Identity to reduce the hosting fees. It doesn't need to have money on it. If you have one or know where I can find one pls Contact me!!
 
 ## Selfhost
-(I'd recommend to use a Raspberry Pi)
-Set the environment Variables `discord_token` and `guild_id` or
-change the token string at the end of the code and the guildId to yours.
-Than install dependencies: `python3 -m pip install discord.py` and `python3 -m pip install durations`
-and than finally run `python3 bot/main.py`
+(I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its more complicated on Windows)
+<details>
+ ### Prerequisites
+ <summary><b>Step-by-Step Tutorial</b></summary>
+ You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)]
+  
+ ### Creating a bot to get a bot token
+ * Create an application in the developer portal by clicking [here](https://discordapp.com/developers/applications/)
+ * Open up your new application and click 'Add Bot' under the Bot settings to create your bot.
+ * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!!
+
+ ### Downloading Repo and installing dependencies
+ * Download the Repo as zip file and unpack it
+ * Install Python if you don't have it (preinstalled on raspi)
+ * Run `python3 -m pip install discord.py` and `python3 -m pip install durations` in a Terminal to install dependencies
+ 
+ ### Runnung the bot
+ * Change the values in start.sh
+  * discord_token=`(Enter the bot token that you copied from the developer portal)`
+  * guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
+ * Then doubleclick start.sh and click on "Open in Terminal" or run ./start.sh in a Terminal
+ 
+</details>
 
 ## Host using Heroku
 Check out the original tutorial from https://github.com/audieni/discord-py-heroku/
+Note that Heroku doesn't have a persistent storage so you'd have to use AWS or some other storage addons.
 <details>
   <summary><b>Step-by-Step Tutorial</b></summary>
   
