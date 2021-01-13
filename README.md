@@ -25,8 +25,9 @@ I need a (fake) Credit Card to confirm my Identity to reduce the hosting fees. I
 ## Selfhost
 (I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its more complicated on Windows)
 <details>
- ### Prerequisites
  <summary><b>Step-by-Step Tutorial</b></summary>
+ 
+ ### Prerequisites
  You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)]
   
  ### Creating a bot to get a bot token
