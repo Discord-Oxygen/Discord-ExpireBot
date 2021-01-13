@@ -23,7 +23,7 @@ Also I don't mind donations ;)
 I need a (fake) Credit Card to confirm my Identity to reduce the hosting fees. It doesn't need to have money on it. If you have one or know where I can find one pls Contact me!!
 
 ## Selfhost
-(I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its more complicated on Windows)
+(I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its easier to setup)
 <details>
  <summary><b>Step-by-Step Tutorial</b></summary>
  
