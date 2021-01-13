@@ -224,6 +224,10 @@ async def delperm(ctx: Context, role: discord.Role):
         await ctx.message.add_reaction("✅")
     else:
         await ctx.send("I don't think that role had permissions :confused:")
+        
+@bot.command()
+async def on_message(ping):
+    await ctx.send("pong")
 
 @bot.event
 async def on_command_error(ctx: Context, err):
