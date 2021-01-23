@@ -14,7 +14,10 @@ I'll probably host the bot and make it public for top.gg so anyone can use it, a
 
 Thanks to (I'll add the LInk in the next commit) for fixing a Critical Bug!!!
 
-<small>And thanks to the guys from Scicraft and "The Garage" (Armster15, F34R and Yumns) for the good advices.</small>
+<details><summary>I also want to say thank you to:
+<small>the guys from Scicraft
+the guys from "The Garage" (Armster15, F34R and Yumns) for the good advices.</small>
+</detail>
 
 ## Invite
 (currently only works on one server so its disabled)
