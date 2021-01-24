@@ -17,7 +17,7 @@ Thanks to [DerSeb90](https://github.com/DerSeb90) for fixing a Critical Bug!!!
 <details>
  <summary>I also want to say thank you to:</summary>
  <li> the guys from Scicraft's <a href="https://discord.com/channels/211786369951989762/423506375780466688">#coding-stuff</a> channel
- <li> the guys from "The Garage" (Armster15, F34R and Yumns) for the good advices.
+ <li> the guys from <a href="https://discord.com/channels/724417775795306530">"The Garage"</a> (Armster15, F34R and Yumns) for the good advices.
 </details>
 
 ## Invite
