@@ -12,7 +12,7 @@ This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h,
 I didn't code it all on myself, I only helped and send feedback/did testing etc. The original Creator wants to stay private, so we decided to make the bot my own.
 I'll probably host the bot and make it public for top.gg so anyone can use it, and I'll add multi-guild functuallity.<br>
 
-Thanks to (I'll add the LInk in the next commit) for fixing a Critical Bug!!!
+Thanks to [DerSeb90](https://github.com/DerSeb90) for fixing a Critical Bug!!!
 
 <details>
  <summary>I also want to say thank you to:</summary>
