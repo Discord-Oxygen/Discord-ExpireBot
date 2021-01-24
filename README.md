@@ -32,6 +32,7 @@ I need a (fake) Credit Card to confirm my Identity to reduce the hosting fees. I
 
 ## Selfhost
 (I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its easier to setup)
+You can also use a VPS
 <details>
  <summary><b>Step-by-Step Tutorial</b></summary>
  
