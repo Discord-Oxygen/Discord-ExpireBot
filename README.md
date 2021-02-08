@@ -46,6 +46,7 @@ You can also use a VPS
 
 <details>
  <summary><b>For Linux (Raspberry Pi)</summary>
+  
  ### Downloading Repo and installing dependencies
  * Download the Repo as zip file and unpack it
  * Run `python3 -m pip install discord.py` and `python3 -m pip install durations` in a Terminal to install dependencies
@@ -58,6 +59,7 @@ You can also use a VPS
  </details>
  <details>
  <summary><b>For Windows 10</summary>
+ 
  ### Downloading Repo and installing dependencies
  * Download the Repo as zip file and unpack it
  * Install [Python](https://www.python.org/downloads/) if you don't have it
