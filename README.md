@@ -44,9 +44,10 @@ You can also use a VPS
  * Open up your new application and click 'Add Bot' under the Bot settings to create your bot.
  * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!!
 
+<details>
+ <summary><b>For Linux (Raspberry Pi)</summary>
  ### Downloading Repo and installing dependencies
  * Download the Repo as zip file and unpack it
- * Install Python if you don't have it (preinstalled on raspi)
  * Run `python3 -m pip install discord.py` and `python3 -m pip install durations` in a Terminal to install dependencies
  
  ### Runnung the bot
@@ -54,7 +55,20 @@ You can also use a VPS
   * discord_token=`(Enter the bot token that you copied from the developer portal)`
   * guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
  * Then doubleclick start.sh and click on "Open in Terminal" or run ./start.sh in a Terminal
+ </details>
+ <details>
+ <summary><b>For Windows 10</summary>
+ ### Downloading Repo and installing dependencies
+ * Download the Repo as zip file and unpack it
+ * Install [Python](https://www.python.org/downloads/) if you don't have it
+ * Run `pip install discord.py` and `pip install durations` in cmd (as admin) to install dependencies
  
+ ### Runnung the bot
+ * Change the values in start.bat
+  * discord_token=`(Enter the bot token that you copied from the developer portal)`
+  * guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
+ * Then doubleclick start.bat
+ </details>
 </details>
 
 ## Host using Heroku
