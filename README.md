@@ -67,8 +67,8 @@ You can also use a VPS
  
  ### Runnung the bot
  * Change the values in start.bat
-  * discord_token=`(Enter the bot token that you copied from the developer portal)`
-  * guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
+  * set discord_token=`(Enter the bot token that you copied from the developer portal)`
+  * set guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
  * Then doubleclick start.bat
  </details>
 </details>
