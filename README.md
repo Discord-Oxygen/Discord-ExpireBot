@@ -25,10 +25,10 @@ Thanks to [DerSeb90](https://github.com/DerSeb90) for fixing a Critical Bug!!!
 https://discord.com/api/oauth2/authorize?client_id=786697105838309426&permissions=268438656&scope=bot
 
 ## Contributing
-Consider giving this Repo a star if you like it and vote for the Bot at top.gg!!!
-Write issues and pulls! Test and Report! This helps the project.
-Also I don't mind donations ;)
-I need a (fake) Credit Card to confirm my Identity to reduce the hosting fees. It doesn't need to have money on it. If you have one or know where I can find one pls Contact me!!
+Consider giving this Repo a star if you like it and vote for the Bot at top.gg!!!<br>
+Write issues and pulls! Test and Report! This helps the project.<br>
+Also I don't mind donations ;)<br>
+If you have any question or feedback, feel free to Contact me
 
 ## Selfhost
 (I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its easier to setup)
