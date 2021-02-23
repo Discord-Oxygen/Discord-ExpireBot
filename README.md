@@ -45,31 +45,45 @@ You can also use a VPS
  * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!!
 
 <details>
- <summary><b>For Linux (Raspberry Pi)</summary>
+ <summary><b>For Linux (Raspberry Pi)</b></summary>
   
  ### Downloading Repo and installing dependencies
  * Download the Repo as zip file and unpack it
- * Run `python3 -m pip install discord.py` and `python3 -m pip install durations` in a Terminal to install dependencies
+ * Run `python3 -m pip install -r requirements.txt` in a Terminal to install dependencies
  
- ### Runnung the bot
+ ### Running the bot
  * Change the values in start.sh
   * discord_token=`(Enter the bot token that you copied from the developer portal)`
   * guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
  * Then doubleclick start.sh and click on "Open in Terminal" or run ./start.sh in a Terminal
  </details>
  <details>
- <summary><b>For Windows 10</summary>
+ <summary><b>For Windows 10</b></summary>
  
  ### Downloading Repo and installing dependencies
  * Download the Repo as zip file and unpack it
  * Install [Python](https://www.python.org/downloads/) if you don't have it
- * Run `pip install discord.py` and `pip install durations` in cmd (as admin) to install dependencies
+ * open cmd (as admin) and cd to the repo
+ * Run `pip install -r requirements.txt` to install dependencies
  
- ### Runnung the bot
+ ### Running the bot
  * Change the values in start.bat
-  * set discord_token=`(Enter the bot token that you copied from the developer portal)`
-  * set guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
+   * set discord_token=`(Enter the bot token that you copied from the developer portal)`
+   * set guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
  * Then doubleclick start.bat
+ </details>
+ 
+ <details>
+ <summary><b>None of the above</b></summary>
+ 
+ ### Downloading Repo and installing dependencies
+  * Download the Repo as zip file and unpack it
+  * install the missing requirements by running `pip install -r requirements.txt`
+  
+ ### Running the bot
+  * find `os.environ.get('guild_id')` in the code (main.py) and replace it with your guild ID
+  * find `os.environ.get('discord_token')` in the code (main.py) and replace it with you bot's token
+  * Run main.py with python3
  </details>
 </details>
 
