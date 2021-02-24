@@ -30,7 +30,7 @@ Write issues and pulls! Test and Report! This helps the project.<br>
 Also I don't mind donations ;)<br>
 If you have any question or feedback, feel free to Contact me
 
-## Selfhost
+## Selfhost or VPS
 (I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its easier to setup)
 You can also use a VPS
 <details>
@@ -87,7 +87,7 @@ You can also use a VPS
  </details>
 </details>
 
-## Host using Heroku
+## Host using Heroku (not recommended)
 Check out the original tutorial from https://github.com/audieni/discord-py-heroku/
 Note that Heroku doesn't have a persistent storage so you'd have to use some other storage addons.
 <details>
