@@ -1,7 +1,7 @@
 # Discord-ExpireBot
 
 This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h, the role will get removed automatically 12h after obtaining. This is individual to all users on the guild. It also saves the obtaining time into a JSON File, so if the Bot gets temporary offline, it can handle this.
-This branch is the original code with some bugfixes, but no improvments. I'd recomend using the main branch
+This branch is the original code, its tested and works. But I won't add new features and won't fix minor bugs. See this bracnhe as "Archieved". I recomend using the main branch.
 
 ## Credit
 This branch is the original code, not made by me.
@@ -15,16 +15,12 @@ This is the legacy Version, you have to selfhost it.
 see main branch
 
 ## Selfhost or VPS
-(I'd recommend to use a Raspberry Pi)
-
-change the token string at the end of the code and the guildId at the beginning to yours.
-Than install dependencies: `python3 -m pip install discord.py` and `python3 -m pip install durations`
-and than finally run `python3 bot/main.py`
+(I'd recommend to use a Raspberry Pi if you Selfhost)
 <details>
   <summary><b>Step-by-Step Tutorial</b></summary>
   
  ### Prerequisites
- You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)], GitHub [[Link](https://github.com/join)] , and Heroku [[Link](https://signup.heroku.com/)].
+ You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)]
 
  ### Creating a bot to get a bot token
  * Create an application in the developer portal by clicking [here](https://discordapp.com/developers/applications/)
