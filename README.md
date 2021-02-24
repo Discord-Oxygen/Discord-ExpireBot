@@ -5,7 +5,7 @@ This branch is the original code, its tested and works. But I won't add new feat
 
 ## Credit
 This branch is the original code, not made by me.
-I only helped and send feedback/did testing etc. The original Creator wants to stay private, so we decided to make the bot my own.
+I only helped, did small bugfixes and send feedback/did testing etc. The original Creator wants to stay private, so we decided to make the bot my own.
 I won't update this branch, except for critical bugs.
 
 ## Invite
