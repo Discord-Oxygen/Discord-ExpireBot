@@ -1,18 +1,14 @@
 import discord
 from discord.ext import tasks
 import json
-import psycopg2
-from durations import Duration
+from durations import *
 import time
 from discord.ext.commands import *
 import os
+import sys
 command_prefix = "%"
 bot = Bot(command_prefix=command_prefix, intents=discord.Intents.all(), help_command=None)
 bot_name = "Expire Bot"
-
-DATABASE_URL = os.environ['DATABASE_URL']
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-
 
 def jsondump(v: dict):
     RolesJson.seek(0)
@@ -28,6 +24,64 @@ async def has_perms(ctx):
     await ctx.send("You don't have the permissions to do that!")
     return False
 
+def timeformat(secs):
+    years = int(secs//31536000)
+    month = int((secs - years*31536000)//2628288)
+    weeks = int((secs - years*31536000 - month*2628288)//604800)
+    days = int((secs - years*31536000 - month*2628288 - weeks*604800)//86400)
+    hours = int((secs - years*31536000 - month*2628288 - weeks*604800 - days*86400)//3600)
+    minutes = int((secs - years*31536000 - month*2628288 - weeks*604800 - days*86400 - hours*3600)//60)
+    seconds = int((secs - years*31536000 - month*2628288 - weeks*604800 - days*86400 - hours*3600 - minutes*60)//1)
+    milliseconds = round(((secs - years*31536000 - month*2628288 - weeks*604800 - days*86400 - hours*3600 - minutes*60 - seconds)*1000), 3)
+    if milliseconds.is_integer():
+        int(milliseconds)
+    result = []
+    if years != 0:
+        if years == 1:
+            s = ""
+        else:
+            s = "s"
+        result.append(f"{years} year{s}")
+    if month != 0:
+        result.append(f"{month} month")
+    if weeks != 0:
+        if weeks == 1:
+            s = ""
+        else:
+            s = "s"
+        result.append(f"{weeks} week{s}")
+    if days != 0:
+        if days == 1:
+            s = ""
+        else:
+            s = "s"
+        result.append(f"{days} day{s}")
+    if hours != 0:
+        if hours == 1:
+            s = ""
+        else:
+            s = "s"
+        result.append(f"{hours} hour{s}")
+    if minutes != 0:
+        if minutes == 1:
+            s = ""
+        else:
+            s = "s"
+        result.append(f"{minutes} minute{s}")
+    if seconds != 0:
+        if seconds == 1:
+            s = ""
+        else:
+            s = "s"
+        result.append(f"{seconds} second{s}")
+    if milliseconds != 0:
+        if years == 1:
+            s = ""
+        else:
+            s = "s"
+        result.append(f"{milliseconds} millisecond{s}")
+    result = ", ".join(result)
+    return result
 
 # EVENTS
 @bot.event
@@ -39,7 +93,7 @@ async def on_message(message):
 async def on_ready():
     global RJD, RolesJson
     await bot.change_presence(activity=discord.Game(name=f"{command_prefix}help"))
-    TestingZone = bot.get_guild(os.environ.get('guild_id'))
+    TestingZone = bot.get_guild(int(os.environ.get('guild_id')))
     try:
         RolesJson = open("roles.json", "r+")
     except:
@@ -66,7 +120,8 @@ async def on_ready():
             member[1] -= current_time
     # Lets you know that the bot is ready and what version you're running
     print("Bot is ready")
-    print(f"Version: {discord.__version__}")
+    print(f"ExpireBot v1.1")
+    print(f"Discord API Version: {discord.__version__}")
 
     async def pushList(n: str):
         try:
@@ -175,22 +230,32 @@ async def _help(ctx: discord.ext.commands.Context):
     )
     help_embed.add_field(
         name="Expire",
-        value=f"_Sets a role to expire after a certain amount of time_\n\n{command_prefix}expire <role> <time>\n(eg, {command_prefix}expire @examplerole 1m 12s)",
+        value=f"_Sets a role to expire after a certain amount of time_\n\n`{command_prefix}expire <role> <time>`\n(eg, {command_prefix}expire @examplerole 1m 12s)",
         inline=False
     )
     help_embed.add_field(
         name="Unexpire",
-        value=f"_Removes a role from the list of expiring roles_\n\n{command_prefix}unexpire <role>\n(eg, {command_prefix}unexpire @examplerole2)",
+        value=f"_Removes a role from the list of expiring roles_\n\n`{command_prefix}unexpire <role>`\n(eg, {command_prefix}unexpire @examplerole2)",
         inline=False
     )
     help_embed.add_field(
         name="AddPerm",
-        value=f"_Gives a role permissions to use this bot_\n\n{command_prefix}addperm <role>",
+        value=f"_Gives a role permissions to use this bot_\n\n`{command_prefix}addperm <role>`",
         inline=False
     )
     help_embed.add_field(
         name="DelPerm",
-        value=f"_Removes a role's permission to use this bot_\n\n{command_prefix}delperm <role>",
+        value=f"_Removes a role's permission to use this bot_\n\n`{command_prefix}delperm <role>`",
+        inline=False
+    )
+    help_embed.add_field(
+        name="ViewRoles",
+        value=f"_Displays the current settings_\n\n`{command_prefix}viewroles`",
+        inline=False
+    )
+    help_embed.add_field(
+        name="Ping",
+        value=f"_Displays the bots latency. Check it before reporting Errors_\n\n`{command_prefix}viewroles`",
         inline=False
     )
     await ctx.send(embed=help_embed)
@@ -224,10 +289,42 @@ async def delperm(ctx: Context, role: discord.Role):
         await ctx.message.add_reaction("✅")
     else:
         await ctx.send("I don't think that role had permissions :confused:")
-        
-@bot.command(name="sql")
-async def ping(ctx: Context, sql):
-    await ctx.send("You executed: ".join(sql))
+
+@bot.command()
+async def viewroles(ctx: Context):
+    Roles = []
+    for role in RJD["roles"]:
+        Roles.append(f"<@&{role[0]}>")
+    expires = []
+    for role in RJD["roles"]:
+        expires.append(timeformat(role[1]))
+    roles_embed = discord.Embed(
+        title=f"{bot_name} >> Roles",
+        description=f"Displays all Roles you added using {command_prefix}addperm",
+        colour=discord.Colour.blue()
+    )
+    roles_embed.add_field(
+        name="Role",
+        value="\n".join(Roles),
+        inline=True
+    )
+    roles_embed.add_field(
+        name="Expires After",
+        value="\n".join(expires),
+        inline=True
+    )
+    await ctx.send(embed=roles_embed)
+
+@bot.command()
+async def ping(ctx):
+    await ctx.send(f'My ping is {round((bot.latency * 1000), 3)} ms!')
+
+@bot.command()
+@is_owner()
+async def stop(ctx: Context):
+    await ctx.send("Bot is shutting down...")
+    sys.exit()
+
 
 @bot.event
 async def on_command_error(ctx: Context, err):
