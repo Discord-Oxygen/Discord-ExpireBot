@@ -1,5 +1,5 @@
 # Dev Branch
-**DO NOT USE THIS BRANCH** its only for testing things out. It doesn't work, I just put some Code snippets and drafts here so I don't forget them. This isn't a working source code. It could harm your Server!!!
+**DO NOT** USE THIS BRANCH FOR PRODUCTION, its only for testing. This code didn't got tested and can also have a plenty of bugs. Its a work-in-progress. If things break, its not my fault :D. But of course you can (and also should) report bugs and give feedback. If enough people doesn't have problems with this I'll eventually do a pull request to main
 
 # Discord-ExpireBot
 
@@ -17,11 +17,12 @@ This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h,
 see main Readme
 
 ## Invite
-see main Readme
+The "Beta Bot" is **not** meant for production. It will be offline most time.
+idk if I'll ever add an invite, but probably not. 
 
 ## Contributing
 see main Readme
 
 ## Hosting
-Ppl who use dev branches don't need a tutorial :D
-See Main Readme for a step-by-step tutorial
+Ppl who use dev branches don't need a tutorial :D<br>
+see main Readme
