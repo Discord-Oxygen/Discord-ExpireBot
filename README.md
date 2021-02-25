@@ -10,6 +10,8 @@ This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h,
 `%help`<br>
 `%expire <role> <time>` and `%unexpire <role> <time>`<br>
 `%addperm <role>` and `%delperm <role>`<br>
+`%viewroles`<br>
+`%ping`<br>
 
 ## Credit
 see main Readme
