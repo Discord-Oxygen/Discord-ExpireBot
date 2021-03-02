@@ -28,7 +28,8 @@ https://discord.com/api/oauth2/authorize?client_id=786697105838309426&permission
 Consider giving this Repo a star if you like it and vote for the Bot at top.gg!!!<br>
 Write issues and pulls! Test and Report! This helps the project.<br>
 Also I don't mind donations ;)<br>
-If you have any question or feedback, feel free to Contact me
+If you have any question or feedback, feel free to Contact me<br>
+I'm looking for someone who can create the logo for ExpireBot. Join my Discord and go to #logo-submission
 
 ## Selfhost or VPS
 (I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its easier to setup)
@@ -64,6 +65,9 @@ You can also use a VPS
  ### Downloading Repo and installing dependencies
  * Download the Repo as zip file and unpack it
  * Install [Python](https://www.python.org/downloads/) if you don't have it
+   * Recommended options:<br>
+     Install for all users (as admin)<br>
+     Add to path
  * open cmd (as admin) and cd to the repo
  * Run `pip install -r requirements.txt` to install dependencies
  
