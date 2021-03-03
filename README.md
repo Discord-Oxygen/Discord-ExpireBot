@@ -1,7 +1,7 @@
 # Discord-ExpireBot
 
-This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h, the role will get removed automatically 12h after obtaining. This is individual to all users on the guild. It also saves the obtaining time into a JSON File, so if the Bot gets temporary offline, it can handle this.
-[Support Server](https://discord.com/invite/ptpyaEPapy)
+This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h, the role will get removed automatically 12h after obtaining. This is individual to all users on the guild. It also saves the obtaining time into a JSON File, so if the Bot gets temporary offline, it can handle this.<br>
+Join my [Discord Server](https://discord.com/invite/ptpyaEPapy) if you have any question/feedback or just want to talk.<br>
 
 ## Commands
 `%help`<br>
@@ -16,8 +16,10 @@ Thanks to [DerSeb90](https://github.com/DerSeb90) for fixing a Critical Bug!!!
 
 <details>
  <summary>I also want to say thank you to:</summary>
+ <li> the guys from Discord's official Python Community <a href="https://discord.gg/python">https://discord.gg/python</a></li>
  <li> the guys from Scicraft's <a href="https://discord.com/channels/211786369951989762/423506375780466688">#coding-stuff</a> channel
- <li> the guys from <a href="https://discord.com/channels/724417775795306530">"The Garage"</a> (Armster15, F34R and Yumns) for the good advices.
+ <li> the guys from <a href="https://discord.com/channels/724417775795306530">"The Garage"</a> (Armster15, F34R and Yumns)
+ <li> My friends, allthough they can't code :D</li>
 </details>
 
 ## Invite
@@ -32,7 +34,7 @@ If you have any question or feedback, feel free to Contact me<br>
 I'm looking for someone who can create the logo for ExpireBot. Join my Discord and go to #logo-submission
 
 ## Selfhost or VPS
-(I'd recommend to use a Raspberry Pi because it have to run 24/7 and bc its easier to setup)
+(I'd recommend to use a Raspberry Pi because its cheap and bc its easier to setup)
 You can also use a VPS
 <details>
  <summary><b>Step-by-Step Tutorial</b></summary>
