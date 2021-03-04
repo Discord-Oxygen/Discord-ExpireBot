@@ -3,7 +3,7 @@
 
 # Discord-ExpireBot
 
-This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h, the role will get removed automatically 12h after obtaining. This is individual to all users on the guild. It also saves the obtaining time into a JSON File, so if the Bot gets temporary offline, it can handle this.
+This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h, the role will get removed automatically 12h after obtaining. This is individual to all users on the guild. It also saves the obtaining time into a JSON File, so if the Bot gets temporary offline, it can handle this.<br>
 [Support Server](https://discord.com/invite/ptpyaEPapy)
 
 ## Commands
@@ -11,6 +11,7 @@ This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h,
 `%expire <role> <time>` and `%unexpire <role> <time>`<br>
 `%addperm <role>` and `%delperm <role>`<br>
 `%viewroles`<br>
+`%viewperms`<br>
 `%ping`<br>
 
 ## Credit
