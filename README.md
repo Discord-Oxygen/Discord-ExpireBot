@@ -9,8 +9,9 @@ Join my [Discord Server](https://discord.com/invite/ptpyaEPapy) if you have any 
 `%addperm <role>` and `%delperm <role>`<br>
 
 ## Credit
-I didn't code it all on myself, I only helped and send feedback/did testing etc. The original Creator wants to stay private, so we decided to make the bot my own.
-I'll probably host the bot and make it public for top.gg so anyone can use it, and I'll add multi-guild functuallity.<br>
+This Bot is based on code not made by me. The Creator of that piece of code wants to stay private, so I can't link them. Go to legacy branch for more information.
+Everything I coded afer this was either made by me or is mentioned below.
+I'll probably host the bot and make it public so anyone can use it, but I currently can't afford it.<br>
 
 Thanks to [DerSeb90](https://github.com/DerSeb90) for fixing a Critical Bug!!!
 
