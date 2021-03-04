@@ -6,6 +6,9 @@ import time
 from discord.ext.commands import *
 import os
 import sys
+from dotenv import load_dotenv
+load_dotenv()
+
 command_prefix = "%"
 bot = Bot(command_prefix=command_prefix, intents=discord.Intents.all(), help_command=None)
 
