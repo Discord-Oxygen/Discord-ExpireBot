@@ -269,12 +269,12 @@ async def _help(ctx: discord.ext.commands.Context):
     )
     help_embed.add_field(
         name="AddPerm",
-        value=f"_Gives a role permissions to use this bot_\n\n`{command_prefix}addperm <role>`",
+        value=f"_Gives a role permissions to use this bot. You need to have `Manage Roles` Permissions to use this command._\n\n`{command_prefix}addperm <role>`",
         inline=False
     )
     help_embed.add_field(
         name="DelPerm",
-        value=f"_Removes a role's permission to use this bot_\n\n`{command_prefix}delperm <role>`",
+        value=f"_Removes a role's permission to use this bot. You need to have `Manage Roles` Permissions to use this command._\n\n`{command_prefix}delperm <role>`",
         inline=False
     )
     help_embed.add_field(
@@ -283,8 +283,13 @@ async def _help(ctx: discord.ext.commands.Context):
         inline=False
     )
     help_embed.add_field(
+        name="ViewPerms",
+        value=f"_Displays wich Roles have permissions to configure the Bot_\n\n`{command_prefix}viewperms`",
+        inline=False
+    )
+    help_embed.add_field(
         name="Ping",
-        value=f"_Displays the bots latency. Check it before reporting Errors_\n\n`{command_prefix}viewroles`",
+        value=f"_Displays the bots latency. Check it before reporting Errors_\n\n`{command_prefix}ping`",
         inline=False
     )
     await ctx.send(embed=help_embed)
