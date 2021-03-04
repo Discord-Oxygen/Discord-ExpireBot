@@ -1,3 +1,3 @@
 discord.py
 durations
-psycopg2-binary
+python-dotenv
