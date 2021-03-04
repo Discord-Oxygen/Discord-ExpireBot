@@ -1,11 +1,13 @@
-# Discord-ExpireBot
+# Legacy Branch
+This branch is the original code, its tested and works. But I won't add any new features and won't fix minor bugs. See this bracnhe as "Archieved". I recomend using the main branch.
 
+# Discord-ExpireBot
 This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h, the role will get removed automatically 12h after obtaining. This is individual to all users on the guild. It also saves the obtaining time into a JSON File, so if the Bot gets temporary offline, it can handle this.
-This branch is the original code, its tested and works. But I won't add new features and won't fix minor bugs. See this bracnhe as "Archieved". I recomend using the main branch.
 
 ## Credit
-This branch is the original code, not made by me.
-I only helped, did small bugfixes and send feedback/did testing etc. The original Creator wants to stay private, so we decided to make the bot my own.
+This is the original code, not made by me.
+I only helped, did some bugfixes, send feedback/did testing etc.
+The original Creator wants to stay private, so we decided to make the bot my own.
 I won't update this branch, except for critical bugs.
 
 ## Invite
