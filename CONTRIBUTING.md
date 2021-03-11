@@ -32,7 +32,9 @@ Pls don't use the issues Tab for random chatting around, use the Discussions Tab
 If you don't have Discord or Github, you can contact me on twitter or on other social media. Note that I won't check them that often.
 
 ## Donating
-Hosting a Bot is expensive. So if you donate, it really helps.
+Hosting a Bot is expensive. So if you donate, it really helps.<br>
+You can send your donation (in XMR) to
+`monero:889sJKy5Ag2TGeJkU1hFtNHd9d4knsaVzjJcZDSgVeixZY2hnRPVFaNB876SBjkjpBS3gJe1U7x24YiChq6h7wdjGKLXmLj`
 
 
 ## Other Things
