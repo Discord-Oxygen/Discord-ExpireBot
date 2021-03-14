@@ -4,9 +4,17 @@ This Bot allows you to let roles expire. If you set e.g. the @voted role to 12h,
 Join my [Discord Server](https://discord.com/invite/ptpyaEPapy) if you have any question/feedback or just want to talk.<br>
 
 ## Commands
-`%help`<br>
-`%expire <role> <time>` and `%unexpire <role> <time>`<br>
-`%addperm <role>` and `%delperm <role>`<br>
+| Command                 | Function                          |Permissions Required|
+|-------------------------|-----------------------------------|--------------------|
+|`%help`                  |Disply Help Embed                  |                    |
+|`%expire <role> <time>`  |Set  Role to Expire                |Bot Manager         |
+|`%unexpire <role> <time>`|Set Role to not Expire             |Bot Manager         |
+|`%viewroles`             |View Expiring Roles                |                    |
+|`%addperm <role>`        |Grant Role Bot Manager perm        |Manage Roles        |
+|`%delperm <role>`        |Revoke Bot Manager perm for Role   |Manage Roles        |
+|`%viewperms`             |View wich Role has Bot Manager perm|                    |
+|`%ping%`                 |Display the Bot's latency          |                    |
+|`%stop`                  |Stop/Shutdown the Bot              |Be the Bot's Owner  |
 
 ## Credit
 This Bot is based on code not made by me. The Creator of that piece of code wants to stay private, so I can't link them. Go to legacy branch for more information.
@@ -45,53 +53,51 @@ You can also use a VPS
   
  ### Creating a bot to get a bot token
  * Create an application in the developer portal by clicking [here](https://discordapp.com/developers/applications/)
- * Open up your new application and click 'Add Bot' under the Bot settings to create your bot.![Botscreen](https://user-images.githubusercontent.com/55095883/109214314-fba8ea00-77b1-11eb-8400-b34bf79c55ce.png)
+ * Open up your new application and click 'Add Bot' under the Bot settings to create your bot.<br>![Botscreen](https://user-images.githubusercontent.com/55095883/109214314-fba8ea00-77b1-11eb-8400-b34bf79c55ce.png)<br>![add bot](https://user-images.githubusercontent.com/55095883/109363538-1bf9a700-788d-11eb-891f-4f0872378999.png)<br>![confirmation popup](https://user-images.githubusercontent.com/55095883/109363570-329ffe00-788d-11eb-8384-fc4c30a82173.png)
  * Enable Both Intents ![intents_screen](https://user-images.githubusercontent.com/55095883/109213772-4bd37c80-77b1-11eb-9d63-9c8700cfd07c.png)
  * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!!<br>![copytoken](https://user-images.githubusercontent.com/55095883/109214153-c3a1a700-77b1-11eb-909c-c9d5cf72701b.png)
 
+### Downloading Repo and configuring it
+* Download / Clone the Repo as zip file and unpack it<br>![download](https://user-images.githubusercontent.com/55095883/111070049-2b553300-84d0-11eb-9fe9-057914517921.png)
+* Change the values in .env with a text editor of your choice
+ * discord_token=`(Enter the bot token that you copied from the developer portal)`
+ * guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
+
+### Setting Up Dependencies and Running the Bot
+ 
 <details>
  <summary><b>For Linux (Raspberry Pi)</b></summary>
-  
- ### Downloading Repo and installing dependencies
- * Download the Repo as zip file and unpack it
- * Run `python3 -m pip install -r requirements.txt` in a Terminal to install dependencies
  
- ### Running the bot
- * Change the values in start.sh
-  * discord_token=`(Enter the bot token that you copied from the developer portal)`
-  * guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
- * Then doubleclick start.sh and click on "Open in Terminal" or run ./start.sh in a Terminal
+ * Open a Terminal in the Repo's location
+ * Run `python3 -m pip install -r requirements.txt` in to install dependencies
+ * You're ready to start the Bot! (`python3 ./bot/main.py` or double click main.py in the `bot` folder)
  </details>
  <details>
  <summary><b>For Windows 10</b></summary>
  
- ### Downloading Repo and installing dependencies
- * Download the Repo as zip file and unpack it
  * Install [Python](https://www.python.org/downloads/) if you don't have it
    * Recommended options:<br>
      Install for all users (as admin)<br>
      Add to path
  * open cmd (as admin) and cd to the repo
+   * open the unpacked zip file in explorer
+   * click the bar at the top of explorer<br>![example path](https://user-images.githubusercontent.com/55095883/111071058-b1737880-84d4-11eb-9105-7c62d1387f04.png)
+   * Copy it (Press `CTRL` + `C`)
+   * Press `Windows` + R and type cmd into the Window that opens<br>![run box](https://user-images.githubusercontent.com/55095883/111071394-37dc8a00-84d6-11eb-8ebf-5e4f5bb8f186.png)
+   * Press `CTRL` + `SHIFT` + `ENTER` and confirm the popup with yes<br>![uac](https://user-images.githubusercontent.com/55095883/111071521-d36dfa80-84d6-11eb-8e12-15c00a699b67.png)
+   * enter `cd /D ` into the command prompt and press `CTRL + V` or Rightclick -> Paste<br>![cd command](https://user-images.githubusercontent.com/55095883/111083998-bce49500-8510-11eb-8872-3af5bf39b72e.png)
+   * Press `ENTER`
  * Run `pip install -r requirements.txt` to install dependencies
- 
- ### Running the bot
- * Change the values in start.bat
-   * set discord_token=`(Enter the bot token that you copied from the developer portal)`
-   * set guild_id=`(Enter the ID of your Server. Rightclick on your Server on Discord and then click on 'Copy ID')`
- * Then doubleclick start.bat
+ * You're ready to start the Bot! (type `py bot\main.py` in the console prompt or simply double-click main.py in the `bot` folder)
  </details>
  
  <details>
  <summary><b>None of the above</b></summary>
  
  ### Downloading Repo and installing dependencies
-  * Download the Repo as zip file and unpack it
-  * install the missing requirements by running `pip install -r requirements.txt`
+  * install python if its not already installed
+  * install the missing requirements by running `pip install -r requirements.txt` in the repo's folder
   
- ### Running the bot
-  * find `os.environ.get('guild_id')` in the code (main.py) and replace it with your guild ID
-  * find `os.environ.get('discord_token')` in the code (main.py) and replace it with you bot's token
-  * Run main.py with python3
  </details>
 </details>
 
