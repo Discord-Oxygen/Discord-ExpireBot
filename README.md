@@ -99,22 +99,18 @@ You can also use a VPS
   * install the missing requirements by running `pip install -r requirements.txt` in the repo's folder
   
  </details>
+ <details>
+ <summary><b>Host using repl.it</b></summary>
+ Note that you won't have 100% uptime<br>
+ https://repl.it/talk/learn/Hosting-discordpy-bots-with-replit/11008
 </details>
-
-## Host using Heroku (not recommended)
-Check out the original tutorial from https://github.com/audieni/discord-py-heroku/
-Note that Heroku doesn't have a persistent storage so you'd have to use some other storage addons.
-<details>
-  <summary><b>Step-by-Step Tutorial</b></summary>
-  
+ <details>
+ <summary><b>Host using Heroku (not recommended)</b></summary>
+ Check out the original tutorial from https://github.com/audieni/discord-py-heroku/
+ Note that Heroku doesn't have a persistent storage so you'd have to use some other storage addons. (You can't use the Bot without persistent storage)
+ 
  ### Prerequisites
  You must have an account for Discord [[Link](https://discordapp.com/developers/applications/)], GitHub [[Link](https://github.com/join)] , and Heroku [[Link (https://signup.heroku.com/)].
-
-  ### Creating a bot to get a bot token
- * Create an application in the developer portal by clicking [here](https://discordapp.com/developers/applications/)
- * Open up your new application and click 'Add Bot' under the Bot settings to create your bot.![Botscreen](https://user-images.githubusercontent.com/55095883/109214314-fba8ea00-77b1-11eb-8400-b34bf79c55ce.png)
- * Enable Both Intents ![intents_screen](https://user-images.githubusercontent.com/55095883/109213772-4bd37c80-77b1-11eb-9d63-9c8700cfd07c.png)
- * After creating the bot, click the 'Copy' button under the title Token. Take note of your token as you will need it later. Keep the token secret!!!!<br>![copytoken](https://user-images.githubusercontent.com/55095883/109214153-c3a1a700-77b1-11eb-909c-c9d5cf72701b.png)
 
  ### How to fork the repository and set it up to work with Heroku?
  * Fork a copy of this repository by clicking the 'Fork' on the upper right-hand.
@@ -140,4 +136,5 @@ Note that Heroku doesn't have a persistent storage so you'd have to use some oth
    * Switch the worker from off to on.
    * Click 'Confirm' to finalize the decision.
    * NOTE: You are allocated 550 free Dyno hours, which will not last the entire month. However, if you provide a credit card to verify your identity, you are given an additional 450 hours, which will allow your bot to run indefinitely.
-  </details>
+</details>
+</details>
