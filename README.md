@@ -42,9 +42,12 @@ Also I don't mind donations ;)<br>
 If you have any question or feedback, feel free to Contact me<br>
 I'm looking for someone who can create the logo for ExpireBot. Join my Discord and go to #logo-submission
 
-## Selfhost or VPS
-(I'd recommend to use a Raspberry Pi because its cheap and bc its easier to setup)
-You can also use a VPS
+## Hosting the Bot
+The Bot currently only supports 1 Guild per Bot so you need to host your own copy.<br>
+You can Selfhost it ony your PC (I'd recommend to use a Raspberry Pi because its cheap and bc its easier to setup), on a VPS, or any other hosting Service.<br>
+<b>Quick summary for experienced people:</b> You can either use the [.env](.env) file or environment variables to store the secrets (Using dotenv). All dependencies are listed with their PyPI/pip name in [requirements.txt](requirements.txt))<br>
+<br>
+<b>If you need a tutorial expand the Dropdown tag below</b>
 <details>
  <summary><b>Step-by-Step Tutorial</b></summary>
  
