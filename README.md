@@ -25,15 +25,29 @@ Thanks to [DerSeb90](https://github.com/DerSeb90) for fixing a Critical Bug!!!
 
 <details>
  <summary>I also want to say thank you to:</summary>
- <li> the guys from Discord's official Python Community <a href="https://discord.gg/python">https://discord.gg/python</a></li>
- <li> the guys from Scicraft's <a href="https://discord.com/channels/211786369951989762/423506375780466688">#coding-stuff</a> channel
- <li> the guys from <a href="https://discord.com/channels/724417775795306530">"The Garage"</a> (Armster15, F34R and Yumns)
+ <li> the ppl from Discord's official Python Community <a href="https://discord.gg/python">https://discord.gg/python</a></li>
+ <li> the ppl from Scicraft's <a href="https://discord.com/channels/211786369951989762/423506375780466688">#coding-stuff</a> channel
+ <li> the ppl from <a href="https://discord.com/channels/724417775795306530">"The Garage"</a> (F34R, Yumns. Armster15 and more)
  <li> My friends, allthough they can't code :D</li>
+ <li> Everyone who 
 </details>
 
 ## Invite
 (currently only works on one server so its disabled)
 https://discord.com/api/oauth2/authorize?client_id=786697105838309426&permissions=268438656&scope=bot
+
+## Permissions
+List of all Permissions the Bot needs to function properly.<br>
+I recommend giving the Bot admin perms, so you can't do something wrong with the perms
+| Permission                  | Why its needed                                                                                                   |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------|
+| View Channels/Read Messages | To listen to your commands                                                                                       |
+| Send Messages               | To reply to your commands so you know whats happening                                                            |
+| Add Reactions               | Sometimes the Bot just reacts to your commands instead of replying                                               |
+| Manage Roles                | To unassign the Role that should expire                                                                          |
+| View Audit Log              | To know when somebody obtained a specific Role (to know when to remove it again)                                 |
+|                             |                                                                                                                  |
+| Administrator (Optional)    | People reported that the Bot sometimes doesn't work properly and that giving it admin perms fixes those problems |
 
 ## Contributing
 Consider giving this Repo a star if you like it and vote for the Bot at top.gg!!!<br>
@@ -140,4 +154,15 @@ You can Selfhost it ony your PC (I'd recommend to use a Raspberry Pi because its
    * Click 'Confirm' to finalize the decision.
    * NOTE: You are allocated 550 free Dyno hours, which will not last the entire month. However, if you provide a credit card to verify your identity, you are given an additional 450 hours, which will allow your bot to run indefinitely.
 </details>
+
+<br>
+
+### Getting an Invite Link
+1. Go to your Bot's page at [Discord Developers](https://discordapp.com/developers/applications/)
+2. Click on "OAuth2" and scroll down to "OAuth2 URL Generator"
+3. Select the `bot` scope
+![scopes](https://user-images.githubusercontent.com/55095883/114564426-98471e80-9c70-11eb-9e40-087381f9f43b.png)
+4. Select all Required [Permissions](https://github.com/hxr404/Discord-ExpireBot#permissions)
+5. Click on the Copy button next to the Link
+6. The Invite Link is now in your Clipboard. Now just go to your Browser and paste it in the URL Bar.
 </details>
