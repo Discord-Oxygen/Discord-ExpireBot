@@ -1,11 +1,14 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Report Bugs. But be sure that it is a bug
 title: ''
 labels: bug
 assignees: ''
 
 ---
+
+**Have you read the FAQ and searched for duplicates?**
+:white_check_mark:
 
 **Describe the bug**
 A clear and concise description of what the bug is.
