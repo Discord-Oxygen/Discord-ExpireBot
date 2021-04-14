@@ -172,3 +172,30 @@ After inviting the Bot you can start configuring it.
 1. Go to the Role Settings of your Server and pull the Role of ExpireBot as high as possible. (At least higher than the Role you want to expire)
 2. Choose wich Role(s) can manage the Bot using the addperm command (e.g. `%addperm @Owner`)
 3. Select the Role(s) you want to expire
+
+# FAQ
+Read this before writing issues
+
+**Q:** Where is the invite Link?<br>
+**A:** The Bot currently only works for 1 Server at the time. This will be changed in a future Release. So there is no Invite Link. See [Hosting the Bot](https://github.com/hxr404/Discord-ExpireBot#hosting-the-bot) to get your own invite Link. <br>
+
+**Q:** The Bot doesn't remove the Roles, but everything else seems to work<br>
+**A:** The Bot is probably lacking Permissions. Check if the Bot's Role has all required [Permissions](https://github.com/hxr404/Discord-ExpireBot#permissions). Also make sure that the Bot's Role is higher than the Role you want to expire.<br>
+
+**Q:** I cant use the expire command (No Permission)<br>
+**A:** You neeed to configure wich Role(s) can change the Bot's settings using the `addperm` command<br>
+
+**Q:** The Bot crashes and in the Error Message is something like "Privileged Intentes"<br>
+**A:** You forgot to enable two switches on Discord Developers (see [Tutorial](https://github.com/hxr404/Discord-ExpireBot#hosting-the-bot))<br>
+
+**Q:** The Bot crashes immediatly after startup<br>
+**A:** Make sure to install all [dependencies](https://github.com/hxr404/Discord-ExpireBot#setting-up-dependencies-and-running-the-bot) and to use the lastest Version of Python. Also an invalid Token can crash the Bot. Check the .env File or the Environment Variables. If this doesn't help, check your Internet Connection<br>
+
+**Q:** The Bot works on my Server, but not on the second one<br>
+**A:** You need to host a seperate Bot for each of your Servers. MultiGuild Support is being worked on.<br>
+
+**Q:** I like this Project! How can I help?<br>
+**A:** Check [Contributing](https://github.com/hxr404/Discord-ExpireBot#setting-up-dependencies-and-running-the-bot) and [CONTRIBUTING.md](CONTRIBUTING.md)<br>
+
+**Q:** I need help!<br>
+**A:** Ask in my Discord Server, write an issue or a discussion on GitHub, or contact me directly. Same thin for giving feedback etc.
