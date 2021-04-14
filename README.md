@@ -166,3 +166,9 @@ You can Selfhost it ony your PC (I'd recommend to use a Raspberry Pi because its
 5. Click on the Copy button next to the Link
 6. The Invite Link is now in your Clipboard. Now just go to your Browser and paste it in the URL Bar.
 </details>
+
+## First Steps
+After inviting the Bot you can start configuring it.
+1. Go to the Role Settings of your Server and pull the Role of ExpireBot as high as possible. (At least higher than the Role you want to expire)
+2. Choose wich Role(s) can manage the Bot using the addperm command (e.g. `%addperm @Owner`)
+3. Select the Role(s) you want to expire
