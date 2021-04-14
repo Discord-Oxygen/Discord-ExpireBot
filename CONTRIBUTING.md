@@ -6,6 +6,7 @@ Vote for it at top.gg and other bot lists<br>
 and tell your friends!
 
 ## Testing and Feedback
+Just using the Bot already helps (=doing testing)
 Write issues!<br>
 Report Bugs, do Feature Requests, give Feedback etc.<br>
 Try the dev branch and test everything out!<br>
