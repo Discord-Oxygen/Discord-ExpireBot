@@ -29,7 +29,7 @@ Thanks to [DerSeb90](https://github.com/DerSeb90) for fixing a Critical Bug!!!
  <li> the ppl from Scicraft's <a href="https://discord.com/channels/211786369951989762/423506375780466688">#coding-stuff</a> channel
  <li> the ppl from <a href="https://discord.com/channels/724417775795306530">"The Garage"</a> (F34R, Yumns. Armster15 and more)
  <li> My friends, allthough they can't code :D</li>
- <li> Everyone who 
+ <li> Everyone who uses this Bot and reports issues
 </details>
 
 ## Invite
@@ -47,7 +47,7 @@ I recommend giving the Bot admin perms, so you can't do something wrong with the
 | Manage Roles                | To unassign the Role that should expire                                                                          |
 | View Audit Log              | To know when somebody obtained a specific Role (to know when to remove it again)                                 |
 |                             |                                                                                                                  |
-| Administrator (Optional)    | People reported that the Bot sometimes doesn't work properly and that giving it admin perms fixes those problems |
+| Administrator <strike>(Optional)</strike>| People reported that the Bot sometimes doesn't work properly and that giving it admin perms fixes those problems |
 
 ## Contributing
 Consider giving this Repo a star if you like it and vote for the Bot at top.gg!!!<br>
