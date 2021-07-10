@@ -27,8 +27,8 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Version Info**
-Wich branch are you using (main, dev, legacy)
-Wich Version, always try the lastest release or pre-release, old Versions are not supported
+Which branch are you using (main, dev, legacy)
+Which Version, always try the lastest release or pre-release, old Versions are not supported
 
 **Additional context**
 Add any other context about the problem here.
